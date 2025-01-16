@@ -1,6 +1,7 @@
 class Puzzle:
     # Puzzle class that has a list with 4 options, the correct answer, and the question
-    def __init__(self, question, options, correct_answer, image_path):
+    def __init__(self, question_title, question, options, correct_answer, image_path):
+        self.question_title = question_title
         self.question = question
         self.options = options
         self.correct_answer = correct_answer
@@ -8,6 +9,7 @@ class Puzzle:
 
     # Method that prints the question and the options
     def print_question(self):
+        print(self.question_title)
         print(self.question)
         for i, option in enumerate(self.options):
             print(f"{i + 1}. {option}")
