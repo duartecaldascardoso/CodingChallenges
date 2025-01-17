@@ -1,6 +1,4 @@
 """Challenge class that represents a challenge in the system."""
-
-
 class Challenge:
     def __init__(
         self,

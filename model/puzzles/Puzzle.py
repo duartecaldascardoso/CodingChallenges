@@ -1,6 +1,6 @@
 class Puzzle:
     def __init__(
-        self, question_title, question, options, correct_answer, image_path, rating
+        self, question_title, question, options, correct_answer, image_path, rating, answer_explanation
     ):
         self.question_title = question_title
         self.question = question
@@ -8,6 +8,7 @@ class Puzzle:
         self.correct_answer = correct_answer
         self.image_path = image_path
         self.rating = rating
+        self.answer_explanation = answer_explanation
 
     def check_answer(self, answer):
         return answer == self.correct_answer
@@ -20,3 +21,6 @@ class Puzzle:
 
     def get_rating(self):
         return self.rating
+
+    def get_answer_explanation(self):
+        return self.answer_explanation

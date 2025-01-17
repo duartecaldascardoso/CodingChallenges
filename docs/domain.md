@@ -6,7 +6,7 @@ Coding challenges will have the following domain entities:
 - **Puzzle**: Represents a puzzle that a user can solve. A puzzle has a unique identifier, a question and answers, difficulty level and more.
 - **Challenge**: Represents a challenge that a user has solved. A challenge has a unique identifier, a list of puzzles, a user, and a list of answers that the user has given.
 - **Answer**: Represents an answer that a user has given to a puzzle. An answer has a unique identifier, the puzzle that it is related to, the user that gave it, and the answer itself.
-- **Difficulty**: Represents the difficulty level of a puzzle. A difficulty has a unique identifier, a name, and a description.
+- **Rating**: Represents the rating level of a puzzle.
 - **Category**: Represents the category of a puzzle. A category has a unique identifier, a name, and a description.
 - **Tag**: Represents a tag that can be associated with a puzzle. A tag has a unique identifier, a name, and a description.
 - **Elo**: Represents the Elo rating of a user. An Elo has a unique identifier, a user, a value, and a list of challenges that the user has solved.
@@ -28,7 +28,7 @@ Technical Doubt: Can this all be done using streamlit?
 - Playground
 - Leaderboard
 
-#### Initially supported languages:
+#### Initially supported languages:a
 - Python
 - Java
 - C#
