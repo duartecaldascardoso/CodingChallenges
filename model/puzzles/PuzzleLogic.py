@@ -18,3 +18,9 @@ def populate_puzzles():
     )
 
     return puzzle
+
+# Just a simple function to update the rating. Will have to implement ELO rating system in the future
+def update_rating(current_rating, is_correct):
+    if is_correct:
+        return current_rating + 8, 8
+    return current_rating - 8, -8

@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 streamlit = "*"
-
+watchdog = "*"
 
 [dev-packages]
 
